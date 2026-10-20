@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "ClassPano Sync (Prototype)",
+  "short_name": "ClassPano Sync",
+  "version": "0.4.0",
+  "description": "Capture assignments, due dates and grades from your school portal into ClassPano, only when you click.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ClassPano Sync",
+    "default_icon": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+  },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "minimum_chrome_version": "116"
+}
