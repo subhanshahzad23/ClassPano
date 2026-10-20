@@ -65,7 +65,7 @@ export function SiteNav({ overDark = false }: { overDark?: boolean }) {
   const dropdown =
     "absolute left-0 top-full z-10 mt-3 rounded-[16px] bg-paper p-2 shadow-float before:absolute before:inset-x-0 before:-top-3 before:h-3 before:content-[''] data-[state=open]:animate-[pop-in_180ms_cubic-bezier(0.23,1,0.32,1)]";
   const trigger =
-    "group inline-flex h-10 items-center gap-1 rounded-[8px] px-3.5 text-[15.5px] text-void transition-colors duration-200 hover:bg-fog data-[state=open]:bg-fog focus-visible:outline-2 focus-visible:outline-void";
+    "group inline-flex h-10 items-center gap-1 whitespace-nowrap rounded-[8px] px-3 text-[15.5px] xl:px-3.5 text-void transition-colors duration-200 hover:bg-fog data-[state=open]:bg-fog focus-visible:outline-2 focus-visible:outline-void";
 
   return (
     <>
@@ -133,7 +133,7 @@ export function SiteNav({ overDark = false }: { overDark?: boolean }) {
           </NM.Root>
 
           <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
-            <button type="button" onClick={startWalk} className="hidden h-10 items-center gap-2 rounded-[8px] border-[1.5px] border-line bg-paper px-4 text-[15px] font-medium transition-colors hover:border-void md:inline-flex">
+            <button type="button" onClick={startWalk} className="hidden h-10 items-center gap-2 whitespace-nowrap rounded-[8px] border-[1.5px] border-line bg-paper px-4 text-[15px] font-medium transition-colors hover:border-void md:inline-flex lg:hidden xl:inline-flex">
               <Compass className="size-4" aria-hidden /> Walkthrough
             </button>
             <Link
